@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user">
+    <name>User Sync - usersync</name>
+  	<author>Gobingoo.com</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>www.gobingoo.com</authorUrl>
+	<version>1.1</version>
+    <description>A User Synchronizing Plugin</description>
+    <files>
+        <filename plugin="usersync">usersync.php</filename>
+    </files>
+    <params>
+		<param name="enable_current_location" type="radio" default="1" label="Save current location" description="If Yes, ">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

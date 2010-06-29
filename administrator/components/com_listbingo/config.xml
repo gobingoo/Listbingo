@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params group="general" display="Configuration" image="general.gif" >
+		<!--
+		A simple hack to have subgroups is to set the type as subgroup and the default as subgroup 
+		//-->
+
+		<param name="Site Configuration" label="Site Configuration" type="subgroup" default="subgroup" />
+			<param name="sitename" type="text" default="Listbngo" label="Site Name" description="Set your site name" />
+	</params>	
+</config>

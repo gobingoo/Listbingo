@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="addon" group="system">
+	<name>ScriptTime - Debug Addon</name>
+	<author>Gobingoo Project</author>
+	<creationDate>December 2009</creationDate>
+	<copyright>Copyright (C) 2009 Gobingoo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>www.gobingoo.com</authorUrl>
+	<version>1.0</version>
+	<description>Displays Script Execution time</description>
+ <install>
+        <queries>
+        </queries>
+    </install>
+
+<uninstall>
+        <queries>
+        </queries>
+    </uninstall>
+	<files>
+		<filename addon="scripttime">scripttime.php</filename>
+
+	</files>
+	<params>  		
+	</params>
+</install>

@@ -1,0 +1,119 @@
+
+#gb_module_outer_category_list {
+	margin: 0;
+	padding: 0;
+}
+
+#gb_module_outer_category_list li {
+	list-style: none;
+	background: none;
+	padding: 0;
+}
+
+#gb_module_category_list {
+	margin: 0;
+	padding: 0;
+}
+
+#gb_module_category_list li {
+	list-style: none;
+	background: none;
+	padding-left: 10px;
+}
+
+/* @group Accordion */
+
+dl.accordion
+{
+	width: 100%;	
+}
+.accordion a{
+	text-decoration:none;
+	}
+/* @group Ebene 1 */
+
+dl.accordion dt
+{
+	position: relative;
+	padding: 3px 0;	
+	cursor: pointer;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	font-weight:bold;
+}
+
+* html dl.accordion dt
+{
+	cursor: hand;
+	background-image: none;
+}
+
+dl.accordion dt.open
+{
+	
+}
+
+* html dl.accordion dt.open
+{
+	background-image: none;
+}
+
+dl.accordion dd
+{
+	position: relative;
+	overflow: hidden;
+}
+.accordion_content_1{
+	margin:0px;
+	}
+.accordion_content_1 dl dt{
+	padding-left:10px;
+	}
+dl.accordion dd.sub_accordion
+{
+	
+}
+
+dl.accordion dd.accordion_content
+{
+	padding: 0 0px 0 0px;
+}
+
+dl.accordion dd dl dt
+{
+	background-position: 20px 0;
+	font-weight:normal;
+}
+dl.accordion dd dl dt a
+{
+	background:url(../images/gb-listbingoarrow.gif) no-repeat left 3px;
+	padding-left:13px;
+	}
+dl.accordion dd dl dd.accordion_content
+{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+dl.accordion dd dl dd dl dt
+{
+	padding-left: 65px;
+	background-position: 40px 0;
+}
+
+dl.accordion dd dl dd dl dd.accordion_content
+{
+	padding-left: 65px;
+}
+
+
+dl.accordion dd dl dd dl dd dl dt
+{
+	padding-left: 5px;
+	background-position: 60px 0;
+}
+
+dl.accordion dd dl dd dl dd dl dd.accordion_content
+{
+	padding-left: 5px;
+}

@@ -1,0 +1,52 @@
+.mootabs_title {
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+}
+.mootabs_title li {
+	float: left;
+	background: url(../images/greeenlefttab.gif) no-repeat left top;
+	/*padding: 2px 8px 2px 8px;*/
+	padding-left:5px;
+	margin-right: 2px;
+	cursor: pointer;
+	border:none;
+}
+.mootabs_title li span{
+	background:url(../images/greeenrighttab.gif) no-repeat right top;
+	padding:7px 15px 10px 10px;
+	line-height:30px;
+	color:#FFF;
+	}
+.mootabs_title li.active {
+	background: url(../images/tableftcurve.gif) no-repeat left top;
+	padding-left:5px;
+	/*border-top:1px solid #2d83da;
+	border-right:1px solid #2d83da;
+	border-left:1px solid #2d83da;*/
+}
+.mootabs_title li.active span {
+	background:url(../images/tabrightcurve.gif) no-repeat right top;
+	padding:7px 15px 10px 10px;
+	line-height:30px;
+	color:#FFF;
+}
+.mootabs_panel {
+	display: none;
+	background-color: #e0efff;
+	position: relative;
+	width: 98%;
+	top: -1px;
+	clear: both;
+	overflow: auto;
+	height:359px!important;
+	*height:465px!important;
+	padding:5px;
+	border:1px solid #2d83da;
+	}
+.mootabs_panel.active {
+	background-color: #e0efff;
+	display: block;
+}

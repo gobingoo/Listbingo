@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+
+.icon-48-flag {
+	background-image: url('../images/icons/flag.png');
+}
+.icon-32-home {
+	background-image: url('../images/icons/32/home.png');
+}

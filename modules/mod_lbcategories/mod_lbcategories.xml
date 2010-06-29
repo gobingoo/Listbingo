@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Listbingo Categories</name>
+	<author>Gobingoo.com</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>www.gobingoo.com</authorUrl>
+	<version>1.2</version>
+	<description>Listbingo Categories Module</description>
+	<files>
+		<filename module="mod_lbcategories">mod_lbcategories.php</filename>
+		<filename >index.html</filename>
+		<filename >helper.php</filename>		
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<params>
+		<param name="enable_count" type="radio" default="1" label="Enable Count" description="Enable count in categories module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

@@ -1,0 +1,63 @@
+
+<metadata>
+	<menu>
+		<options var="task">
+			<option value="ads" name="Ads" msg="Ads Listing" />
+			<option value="categories" name="Categories" msg="Ads Listing" />
+			<option value="frontpage" name="Frontpage" msg="Ads Listing" />
+			<option value="myads" name="My Ads" msg="Ads Listing" />
+			<option value="new" name="Post Ad" msg="Ads Listing" />
+			<option value="profile" name="Profile" msg="Ads Listing" />
+			<option value="regions" name="Regions" msg="Ads Listing" />
+			<option value="search" name="Search" msg="Ads Listing" />
+		</options>
+	</menu>
+	<state switch="task">
+		<search>
+			<name>Search Layout</name>
+			<description>Search Layout for Listbingo. Select from Advance or
+				Simple Layout</description>
+			<params>
+				<param name="advance_layout" type="radio" default="0" label="Advance Search Layout" description="Advance Search Layout">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+			</params>
+		</search>
+		<ads>
+			<name>Ad Listing Layout</name>
+			<description>Classified Ad listing layout for listbingo.
+			</description>
+			<params>
+				<param name="list_layout" type="radio" default="list" label="Layout" description="Classified Ad Listing Layout">
+					<option value="list">List Layout</option>
+					<option value="simple">Simple Layout</option>
+				</param>
+			</params>
+		</ads>
+		<categories>
+			<name>Categories Layout	</name>
+			<description>Categories list layout</description>
+		</categories>
+		<frontpage>
+			<name>Frontpage Layout	</name>
+			<description>Frontpage layout</description>
+		</frontpage>
+		<myads>
+			<name>My Ads</name>
+			<description>User posted ads layout</description>
+		</myads>
+		<new>
+			<name>Post New Ad</name>
+			<description>Post New Ad Layout</description>
+		</new>
+		<profile>
+			<name>User Profile</name>
+			<description>User profile layout</description>
+		</profile>
+		<regions>
+			<name>Region List Layout</name>
+			<description>Region List Layout</description>
+		</regions>
+	</state>
+</metadata>

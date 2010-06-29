@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+.imageholder {
+	margin-bottom: 10px;
+}
+
+.gb_item_images {
+	float: left;
+	padding: 5px;
+	margin-right: 8px;
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+}
+
+.gb_item_images img {
+	float: left;
+	margin-right: 3px;
+}
+#gb_remove_image a {
+background:url("../images/remove.png") no-repeat scroll left top transparent;
+cursor:pointer;
+display:block;
+height:20px;
+text-indent:-9999px;
+width:16px;

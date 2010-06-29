@@ -1,0 +1,112 @@
+/* moodalbox CSS */
+div#mb_overlay {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background-color: #000;
+	cursor: pointer;
+	z-index:999;
+}
+div#mb_center, div#mb_bottom {
+	position: absolute;
+	left: 50%;
+	overflow: hidden;
+	background-color: #c8ddff;
+}
+div#mb_center {
+	background-color: #FFF;
+	z-index:1000;
+}
+div#mb_contents {
+	width: 400px;
+	height: 400px;
+	border-bottom: 1px solid #b2cbf2;
+	overflow: auto;
+	background-color: #FFF;
+	visibility: hidden;
+	padding:10px;
+	font:12px/18px Arial, Helvetica, sans-serif;
+}
+.mb_loading {
+	background: #DDD url(../images/loading.gif) no-repeat center center;
+}
+#mb_error {
+	font-size: 1.2em;
+	color: #CD0000;
+	font-weight: bold;
+	text-align: center;
+	padding: 0.5em;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+#mb_error em {
+	font-size: 0.8em;
+}
+div#mb_bottom {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	border-top: 0;
+	border-bottom: 10px solid #c8ddff;
+	border-left: 10px solid #c8ddff;
+	border-right: 10px solid #c8ddff;
+	border-top-style: none;
+	z-index:1000;
+}
+a#mb_close_link {
+	display: block;
+	float: right;
+	width: 66px;
+	height: 22px;
+	background: transparent url(../images/closelabel.gif) no-repeat center;
+	margin: 5px 0;
+}
+div#mb_caption {
+	margin-right: 71px;
+	padding-top:8px;
+	border-top:1px solid #fff;
+	color:#4b6da4;
+}
+.form-validate {
+	background:#dbf2ff;
+	padding:0px 10px 10px 10px;
+	margin-top:0px;
+}
+.form-validate label {
+	font:bold 12px Arial, Helvetica, sans-serif;
+	display:block;
+	padding:10px 0px 5px 0px;
+	cursor:default;
+}
+.form-validate label.invalid {
+	color:#515756!important;
+	}
+.gb_flagbtn {
+	background: transparent url(../images/reportbtn.gif) no-repeat left top;
+	border:none;
+	width:77px;
+	height:26px;
+	color:#FFF;
+	margin-top:10px;
+	cursor:pointer;
+}
+.gb_flagbtn:hover {
+	background: transparent url(../images/reportbtnh.gif) no-repeat left top;
+}
+.form-validate input {
+	border:1px solid #cacfd6;
+	line-height:22px;
+	height:22px;
+	width:90%;
+}
+.form-validate select {
+	border:1px solid #cacfd6;
+	line-height:22px;
+	height:22px;
+	width:90%;
+}
+.form-validate textarea {
+	border:1px solid #cacfd6;
+	width:90%;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="addon" group="flag">
+	<name>Flag addon</name>
+	<creationDate>June, 2010</creationDate>
+	<author>gobingoo.com</author>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>http://www.gobingoo.com</authorUrl>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+	<version>1.2</version>
+	<description>Flag addon for Listbingo</description>
+	<!-- installation part -->
+	<install>
+		<queries>
+<query>
+CREATE TABLE IF NOT EXISTS `#__gbl_flag` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `item_id` int(11) ,
+  `flag_id` int(11) ,
+  `ipaddress` varchar(255),
+  `email` varchar(255),
+  `user_id` int(11),
+  `comment` text ,
+  `flag_date` date,
+  `ordering` int(11),
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  ;
+</query>
+
+		</queries>
+	</install>
+<uninstall>
+		<queries>
+<query>
+drop table if exists `#__gbl_flag`;
+</query>
+
+		</queries>
+	</uninstall>
+
+
+	<files>
+		<filename addon="flag">flag.php</filename>
+		<folder>controllers</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>models</folder>			
+		<folder>tables</folder>
+		<folder>views</folder>	
+	</files>
+	<params>
+		<param name="browsercache" type="radio" default="0"
+			label="Use browser caching" description="If yes, use mechanism for storing page cache in the browser">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cachetime" type="text" default="15" label="Cache Lifetime"
+			description="Page cache lifetime in minutes" />
+	</params>
+	<emailevents>
+		<event name="onFlagSave:flag">Flag Email</event>
+		<event name="onFlagApproval:flag">Flag Approval Email</event>
+		<event name="onFlagUnapproval:flag">Flag Unapproval Email</event>
+	</emailevents>
+</install>

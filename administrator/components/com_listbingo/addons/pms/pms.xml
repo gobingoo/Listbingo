@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="addon" group="pms">
+	<name>PMS</name>
+	<creationDate>June, 2010</creationDate>
+	<author>gobingoo.com</author>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>http://www.gobingoo.com</authorUrl>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+	<version>1.2</version>
+	<description>Private Messaging Addon</description>
+	<install>
+		<queries>
+			<query>
+				CREATE TABLE IF NOT EXISTS `#__gbl_messages` (
+				`id` int(11) NOT NULL AUTO_INCREMENT,
+				`ad_id` int(11) ,
+				`subject` varchar(255) ,
+				`message_to` int(11) ,
+				`message_from` int(11) ,
+				`message` text ,
+				`status` tinyint(4) ,
+				`contact_name` varchar(255) ,
+				`contact_email` varchar(255) ,
+				`contact_phone` varchar(255) ,
+				`reply_to` int(11) ,
+				`message_date` datetime ,
+				PRIMARY KEY (`id`)
+				) ENGINE=MyISAM;
+			</query>
+		</queries>
+	</install>
+
+	<uninstall>
+		<queries>
+			<query>
+			drop table if exists `#__gbl_messages`;
+			</query>
+		</queries>
+	</uninstall>
+	<files>
+		<filename addon="pms">pms.php</filename>
+		<folder>controllers</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+	</files>
+	<params>
+		<param name="browsercache" type="radio" default="0"
+			label="Use browser caching" description="If yes, use mechanism for storing page cache in the browser">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cachetime" type="text" default="15" label="Cache Lifetime"
+			description="Page cache lifetime in minutes" />
+	</params>
+	<emailevents>
+		<event name="onReplySave:pms">Reply Email</event>
+	</emailevents>
+	
+		<menuitems>
+		<option value="addons.pms.my" name="PMS" msg="My PMS" />
+	</menuitems>
+</install>

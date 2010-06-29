@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="addon" group="captcha">
+	<name>Captcha Addon</name>
+	<creationDate>June, 2010</creationDate>
+	<author>gobingoo.com</author>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>http://www.gobingoo.com</authorUrl>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+	<version>1.2</version>
+	<description>Captcha Addon for Gobingoo Product</description>
+
+	<files>
+		<filename addon="captcha">captcha.php</filename>
+		<filename>captcha.xml</filename>
+		<folder>controllers</folder>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>js</folder>
+		<folder>libraries</folder>
+		<folder>views</folder>
+	</files>
+	<params>
+
+	</params>
+</install>

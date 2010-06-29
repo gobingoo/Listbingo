@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+.icon-48-url {
+	background-image: url('../images/icons/url.png');
+}
+
+.icon-48-home {
+	background-image: url('../images/icons/home.png');
+}
+
+.icon-32-home {
+	background-image: url('../images/icons/32/home.png');
+}
+
+.icon-48-type {
+	background-image: url('../images/icons/type.png');
+}
+
+.icon-48-category {
+	background-image: url('../images/icons/category.png');
+}
+
+.icon-48-fields {
+	background-image: url('../images/icons/fields.png');
+}
+
+.icon-48-options {
+	background-image: url('../images/icons/options.png');
+}
+
+.icon-48-regions {
+	background-image: url('../images/icons/regions.png');
+}
+
+.icon-48-country {
+	background-image: url('../images/icons/country.png');
+}
+
+.icon-48-settings {
+	background-image: url('../images/icons/setting.png');
+}
+
+.icon-48-ad {
+	background-image: url('../images/icons/ad.png');
+}
+
+.icon-48-email {
+	background-image: url('../images/icons/email.png');
+}
+
+.icon-48-template {
+	background-image: url('../images/icons/template.png');
+}
+
+
+.icon-48-panel {
+	background-image: url('../images/icons/panel.png');
+}
+
+.icon-48-rebuild {
+	background-image: url('../images/icons/rebuild.png');
+}
+
+.icon-32-rebuild
+	{
+	background-image: url('../images/icons/32/rebuild_32.png');
+	}
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Listbingo Search Module</name>
+	<author>Gobingoo.com</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>www.gobingoo.com</authorUrl>
+	<version>1.2</version>
+	<description>Listbingo Search Module</description>
+	<files>
+		<filename module="mod_lbsearch">mod_lbsearch.php</filename>
+		<filename >index.html</filename>
+		<filename >helper.php</filename>		
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Region Module</name>
+	<author>Gobingoo.com</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>www.gobingoo.com</authorUrl>
+	<version>1.2</version>
+	<description>Listbingo Region Module</description>
+
+	<files>
+		<filename module="mod_lbregion">mod_lbregion.php</filename>		
+		<filename>index.html</filename>	
+		<filename>helper.php</filename>	
+		<folder>tmpl</folder>	
+	</files>
+
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+
+		<param name="country" type="radio" default="1" label="Show country" description="Display the current country or not.">
+		<option value="0">Hide</option>
+		<option value="1">Show</option>
+		</param>
+
+		<param name="region" type="radio" default="1" label="Show region" description="Display the current region or not.">
+		<option value="0">Hide</option>
+		<option value="1">Show</option>
+		</param>
+
+	</params>
+</install>
+

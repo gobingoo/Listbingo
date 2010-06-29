@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="addon" group="system">
+	<name>Sendmail Addon</name>
+	<creationDate>June, 2010</creationDate>
+	<author>gobingoo.com</author>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>http://www.gobingoo.com</authorUrl>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+	<version>1.2</version>
+	<description>Required for sending email on System Events</description>
+ <install>
+        <queries>
+        </queries>
+    </install>
+
+<uninstall>
+        <queries>
+        </queries>
+    </uninstall>
+	<files>
+		<filename addon="sendmail">sendmail.php</filename>
+	</files>
+	<params>  		
+	</params>
+</install>

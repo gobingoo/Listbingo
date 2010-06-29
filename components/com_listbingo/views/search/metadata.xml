@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<task title="Search">
+		<message></message>
+	</task>
+	    <state>
+                <name>Search Layout</name>
+                <description>Search Layout</description>
+             
+                <params>
+                <param name="advance_layout" type="radio" default="0" label="Advance Search Layout" description="Advance Search Layout">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			
+	  	</param>
+                </params>
+                <advanced>
+                </advanced>
+        </state>
+</metadata>

@@ -1,0 +1,29 @@
+<?php // no direct access
+defined('_JEXEC') or die('Restricted access');
+$app=JFactory::getApplication();
+?>
+<div class="wrapper"><?php 
+if(count($list)>0)
+{
+	echo "here";
+	?>
+<ul>
+<?php
+foreach($list as $l)
+{
+	?>
+	<li></li>	
+	<?php
+}
+?>
+</ul>
+<?php
+
+}
+?>
+
+<?php
+}
+
+?>
+</div>

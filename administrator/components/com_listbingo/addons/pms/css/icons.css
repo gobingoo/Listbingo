@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+
+.icon-48-message {
+	background-image: url('../images/icons/message.png');
+}
+
+.icon-32-home {
+	background-image: url('../images/icons/32/home.png');
+}

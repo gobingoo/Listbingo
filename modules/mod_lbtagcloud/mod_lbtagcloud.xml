@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Tag Cloud Module</name>
+	<author>gobingoo</author>
+	<creationDate>Jun 2010</creationDate>
+	<copyright>(C) 2009 - 2010 Gobingoo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html
+		GNU/GPL</license>
+	<authorEmail>info@gobingoo.com</authorEmail>
+	<authorUrl>www.gobingoo.com</authorUrl>
+	<version>1.0</version>
+
+	<files>
+		<filename module="mod_lbtagcloud">mod_lbtagcloud.php</filename>		
+		<filename>index.html</filename>	
+		<filename>helper.php</filename>	
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<params>
+	
+	
+		<param name="minfontsize" type="text" size="20" default="10" label="Minimum  Font Size" description="The size of the smallest tag in the list." />
+        
+        <param name="maxfontsize" type="text" size="20" default="30" label="Maximum Font Size" description="The size of the largest tag in the list" />
+        
+        <param name="totaltags" type="text" size="20" default="25" label="Number of words in tag cloud" description="The number of tags you would like to show in your tag cloud." />
+		
+		<param name="enablesuffle" type="radio" default="1" label="Enable random tags" description="PARAMFRONTPAGEITEMS">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+						
+		<param name="tagcolor" type="color" default="BC21FF" label="Tag words color" description="Please select the color tag word that you would like to display." />
+		
+		<param type="spacer" />
+		
+		<param name="signature" type="list" default="1" label="Enable signature" description="Allow a discreet signature to http://www.gobingoo.com">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+	
+			</params>
+	
+	<params group="advanced" addpath="/modules/mod_lbtagcloud/elements">	
+		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="cache_time" type="text" default="1" label="Cache Time (in minutes)" description="The time before the xml is regenerated" />	
+	</params>
+</install>
+
